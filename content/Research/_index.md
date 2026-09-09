@@ -2,10 +2,6 @@
 title = "Research"
 description = "I use radio observations, statistical inference, and end-to-end analysis pipelines to study neutral hydrogen and the evolution of cosmic structure."
 template = "simple-section.html"
-
-[extra]
-eyebrow = "Science"
-page_class = "research-page"
 +++
 
 <p class="research-intro">My research connects instruments to cosmology: calibrating radio telescopes, suppressing interference and foreground emission, validating weak-signal measurements, and interpreting the recovered 21 cm signal. The projects below highlight my current and recent work.</p>
