@@ -242,7 +242,7 @@ html[data-theme="dark"] .theme-icon--moon {
 .hero {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(250px, 315px);
-  align-items: start;
+  align-items: center;
   gap: clamp(3rem, 8vw, 7rem);
 }
 
@@ -284,8 +284,37 @@ html[data-theme="dark"] .theme-icon--moon {
 }
 
 .hero-body {
-  max-width: 660px;
+  max-width: 700px;
   font-size: 1.06rem;
+}
+
+.hero-body p:first-child {
+  color: var(--text);
+  font-family: var(--serif);
+  font-size: clamp(1.18rem, 2.1vw, 1.38rem);
+  line-height: 1.55;
+}
+
+.profile-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem 1.35rem;
+  margin-top: 2rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--line);
+}
+
+.profile-links a {
+  color: var(--text);
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration-color: var(--line-strong);
+  text-underline-offset: 0.28em;
+}
+
+.profile-links a:hover {
+  color: var(--accent-strong);
+  text-decoration-color: var(--accent);
 }
 
 .hero-actions {
