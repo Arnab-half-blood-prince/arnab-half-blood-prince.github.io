@@ -1,30 +1,31 @@
-# The URL the site will be built for
 base_url = "https://arnab-half-blood-prince.github.io"
 title = "Arnab Chakraborty"
-theme = "kodama-theme"
-
-# Whether to automatically compile all Sass files in the sass directory
-compile_sass = true
-
-# Whether to build a search index to be used later on by a JavaScript library
+description = "Arnab Chakraborty is a radio astronomer and observational cosmologist working on 21 cm intensity mapping, large-scale structure, and radio-interferometric data analysis."
+default_language = "en"
+compile_sass = false
 build_search_index = false
+generate_feed = false
 
 [markdown]
-# Whether to do syntax highlighting
-# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
 highlight_code = true
+external_links_target_blank = true
+external_links_no_follow = false
+external_links_no_referrer = true
 
 [extra]
-# Put all your custom variables here
-
-avatar = "static/avatar.jpg"
-favicon = "static/favicon.png"
+role = "Dunlap Fellow"
+affiliation = "Dunlap Institute for Astronomy and Astrophysics, University of Toronto"
+location = "Toronto, Canada"
+email = "arnab.chakraborty@dunlap.utoronto.ca"
+github = "https://github.com/Arnab-half-blood-prince"
+orcid = "https://orcid.org/0000-0002-7758-9859"
+ads = "https://ui.adsabs.harvard.edu/search/q=docs(library%2F0M0G3dsjSNeXotLDUmsR6Q)&sort=date%20desc%2C%20bibcode%20desc&p_=0"
 
 menu_items = [
-    { path = "#contacts", name = "Contact"},
+  { path = "/Research/", name = "Research" },
+  { path = "/Publications/", name = "Publications" },
+  { path = "/Softwares/", name = "Software" },
+  { path = "/Resources/", name = "Resources" },
+  { path = "/Talks/", name = "Talks" },
+  { path = "/CV/", name = "CV" },
 ]
-
-# Enter your email
-email = "arnab.phy.personal@gmail.com"
-
-contact_in_index = true
