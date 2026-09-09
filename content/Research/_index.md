@@ -1,98 +1,53 @@
 +++
 title = "Research"
+description = "I use radio observations, statistical inference, and end-to-end analysis pipelines to study neutral hydrogen and the evolution of cosmic structure."
 template = "simple-section.html"
+
+[extra]
+eyebrow = "Science"
+page_class = "research-page"
 +++
 
-### Overview
-I am primarily interested in analyzing radio data and extract scientific information from that to better understand the Universe and learn fundamental physics. 
-To probe the history and evolution of the Universe I use the 21 cm line emission of neutral hydrogen, which can be used to trace the cosmic history.
-Below a more detailed description of my research is provided.
+<p class="research-intro">My research connects instruments to cosmology: calibrating radio telescopes, suppressing interference and foreground emission, validating weak-signal measurements, and interpreting the recovered 21 cm signal. The projects below highlight my current and recent work.</p>
 
-## Line Intensity Mapping
+{% research(id="chime-auto-power", meta="CHIME · Post-reionization intensity mapping", title="The first cosmological 21 cm auto-power detection", image="chime-auto-power.png", alt="Measured CHIME 21 cm auto-power spectrum with red data points, a black best-fit curve, blue imaginary-component points, and residuals", caption="CHIME auto-power measurement. The imaginary component and lower residual panel provide stringent null tests.") %}
+As science lead within the CHIME collaboration, I designed and built the analysis that delivered the first detection of the cosmological 21 cm auto-power spectrum from CHIME maps alone. The pipeline combines adaptive RFI mitigation, achromatic beamforming, foreground filtering, and a comprehensive validation suite.
 
-My research interest is in understanding the formation and evolution of the large-scale structure
-of the Universe. I use large surveys of the sky to answer the question of how a smooth early Universe 
-evolved over cosmic time and formed the large complex structure that we see in the present day Universe. 
-I am currently focused on [Line Intensity Mapping](https://arxiv.org/abs/1903.04496) technique, where we make 
-a diffuse sky map at frequencies corresponding to atomic/molecular lines originating in galaxies or the intergalactic 
-medium and then measure the statistical fluctuation of the radiation field to understand the structure 
-formation at large scales. I am particularly interested in the observation of [21 cm line of neutral hydrogen](https://arxiv.org/abs/astro-ph/9608010)
-and measuring the auto-correlation power spectrum of the radiation field to map the distribution of matter in
-the Universe. By measuring the statistical signal in the data, [the baryon accoustic oscillation](https://arxiv.org/abs/1201.2434) 
-, we will be able to constrain the rate of expansion of the Universe and use this to probe the nature of
-[dark energy](https://en.wikipedia.org/wiki/Dark_energy). Currently, I am heavily involved in two
-projects trying to do this:
+The measurement reaches **12.4σ at z ≈ 1.16**. I also co-led the companion interpretation work, which connects the measurement to the abundance and clustering of neutral hydrogen and compares it with IllustrisTNG.
 
-## CHIME
+[Detection paper (arXiv:2511.19620)](https://arxiv.org/abs/2511.19620) · [Interpretation paper (arXiv:2603.25680)](https://arxiv.org/abs/2603.25680)
+{% end %}
 
-<!--![CHIME at night. Photo by Andre Renard](chime.jpg)
+{% research(id="chord", meta="CHORD · Instrument commissioning", title="Calibrating the next generation of wideband radio surveys", image="chord-2026.jpg", alt="Aerial view of the CHORD dishes and CHIME cylinders at the Dominion Radio Astrophysical Observatory", caption="CHORD at DRAO with 128 of its planned 512 antennas, 27 August 2026. Image: Bryan Schellenberg.", reverse=true) %}
+CHORD will combine 512 six-metre dishes, ultra-wideband receivers, and a highly redundant configuration to survey neutral hydrogen across a large fraction of cosmic history. It is being built alongside CHIME at the Dominion Radio Astrophysical Observatory near Penticton, British Columbia.
 
-<img src="chime.jpg" alt="CHIME at night. Photo by Andre Renard" height="40em">
--->
+I am a member of CHORD's calibration and intensity-mapping group and its HI galaxy survey group. My current work focuses on commissioning data, the radio-frequency environment, sky-based calibration, and the analysis infrastructure needed to turn the instrument's measurements into robust cosmological maps.
 
+[CHORD project](https://www.chord-observatory.ca/) · [CHORD overview (arXiv:2607.09374)](https://arxiv.org/abs/2607.09374)
+{% end %}
 
-The Canadian Hydrogen Intensity Mapping Experiment, [CHIME](https://chime-experiment.ca/),  is a novel radio interferometer built at the
-[Dominion Radio Astrophysical Observatory](https://nrc.canada.ca/en/research-development/nrc-facilities/dominion-radio-astrophysical-observatory-research-facility)
-near Penticton in British Columbia. CHIME is designed for mapping the distribution of neutral hydrogen between
-redshifts 0.8 and 2.5, and constraining the equation of state of dark energy at a key
-epoch. For an overview of CHIME see {{ arxiv(id="2201.07869") }}. CHIME started collecting data from 2018.
-After the initial deployment and commissioning phase, we used data from 2019 and released our first 
-science results, where we detected cosmological HI 21 cm signal in  cross-correlations of CHIME data against optical catalogs from eBOSS ({{ arxiv(id="2202.01242") }}).
+{% research(id="forest", meta="Cosmic dawn · 21 cm absorption", title="A forest without trees: neutral gas at z ≈ 5.6", image="forest-spectrum.png", alt="Example residual 21 cm Forest spectrum versus observed frequency and comoving distance, showing absorption signal and simulated noise", caption="An example noisy 21 cm Forest spectrum, illustrating the absorption structure targeted by the one-dimensional power-spectrum analysis.") %}
+The **21 cm Forest** is a set of narrow absorption features imprinted by neutral intergalactic hydrogen on the spectra of distant radio sources. Unlike large-scale 21 cm emission experiments, it probes small-scale structure and the thermal state of the gas along an individual line of sight.
 
-CHIME is currently taking data and we are working our way towards BAO measurements. My main contribution is to develop software pipeline to measure the 
-auto-correlation power spectrum using CHIME data only. I am involved in understanding various systematics present in the data and removing those to detect the cosmological
-signal from neutral hydrogen. 
+I co-led work using the one-dimensional 21 cm Forest power spectrum to constrain the thermal state of the neutral intergalactic medium at **z ≈ 5.6**. This approach shows that useful physical constraints can be extracted statistically even when individual absorption features are difficult to identify.
 
-{{ scaledimage(src="chime.jpg", alt="CHIME at night. Photo by Andre Renard", width="70%") }}
+[Forest without trees is still fruitful (arXiv:2607.15341)](https://arxiv.org/abs/2607.15341)
+{% end %}
 
-## CHORD
+{% research(id="ugmrt", meta="uGMRT · Foregrounds and post-reionization cosmology", title="From calibrated visibilities to multi-redshift 21 cm limits", image="Upper_lim.jpg", alt="Two-panel scientific figure showing uGMRT power-spectrum sensitivity and an upper limit on the 21 cm brightness-temperature power spectrum", caption="The uGMRT analysis placed the first multi-redshift interferometric limits on the post-reionization 21 cm signal at z = 1.96-3.58.", reverse=true) %}
+During my PhD, I developed a complete wideband calibration, RFI-flagging, imaging, and power-spectrum pipeline for the upgraded Giant Metrewave Radio Telescope. I used deep observations of the ELAIS-N1 field to characterize diffuse Galactic synchrotron emission and extragalactic foreground populations.
 
-<!--![Rendering of HIRAX](hirax_karoo.jpg)-->
+That work produced the first multi-redshift interferometric upper limits on the post-reionization 21 cm power spectrum at **z = 1.96-3.58**, constraining the product of neutral-hydrogen abundance and bias. I also quantified how missing frequency channels caused by RFI flagging affect cosmological power-spectrum estimation.
 
-The Canadian Hydrogen Observatory and Radio-transient Detector, [CHORD](https://www.chord-observatory.ca/home)
-is a radio interferometer currently under development that will be built at the
-[Dominion Radio Astrophysical Observatory](https://nrc.canada.ca/en/research-development/nrc-facilities/dominion-radio-astrophysical-observatory-research-facility).
- CHORD will consist of 512 dishes of 6m diameter each arranged in a compact redundant array {{ arxiv(id="1911.01777") }}. CHORD will operate between 
- 300 to 1500 MHz and have a deep dish structure with f/D = 0.21. For more details about the feed design, system temperature measurement, etc, please see {{ arxiv(id="2210.07477") }}. 
- Using bandwidth × field of view × sensitivity as a figure of merit, CHORD will be an order of magnitude more powerful than its predecessor CHIME, and be the world-leading facility of its type.
- 
-The building of the first 66 dishes (pathfinder) is underway. I am currently involved in software development for calibration and the simulation pipeline for CHORD, 
-where we will be using a novel calibration algorithm [Corrcal](https://arxiv.org/abs/1701.01860). 
- 
+[21 cm limits (ApJL)](https://doi.org/10.3847/2041-8213/abd17a) · [Missing spectral information (ApJ)](https://doi.org/10.3847/1538-4357/ac5cc5) · [Calibration pipeline](https://github.com/Arnab-half-blood-prince/GMRT_DI_Calibration_pipeline)
+{% end %}
 
-{{ scaledimage(src="chord.jpg", alt="CHORD", width="70%") }}
+{% research(id="lensing", meta="Galaxy evolution · Strong gravitational lensing", title="Detecting neutral hydrogen in a distant galaxy", image="spectrum_im.jpg", alt="Scientific plot of the detected redshifted HI 21 cm emission spectrum from a strongly lensed galaxy", caption="The detected HI 21 cm emission line from a strongly lensed star-forming galaxy at z ≈ 1.3.") %}
+The 21 cm emission line is a direct tracer of a galaxy's neutral atomic gas, the reservoir from which new stars form. At high redshift the line is extremely faint, making detections from individual galaxies exceptionally difficult with present-day radio telescopes.
 
-## Science with GMRT
+Using the natural magnification supplied by strong gravitational lensing, we reported the first detection of HI 21 cm emission from a star-forming galaxy at **z ≈ 1.3**. The measurement demonstrated how lensing can extend direct atomic-gas studies to much earlier cosmic times.
 
-In the past, during my Ph.D,  I have done significant work on understanding Foregrounds, 
-developing pipelines for calibration and RFI flagging for the upgraded wideband correlator system of Giant MetreWave Radio Telescope, [GMRT](http://www.ncra.tifr.res.in/ncra/gmrt), to search for the diffuse HI 21 cm signal at redshift 1.96 to 3.58. 
-The [GMRT](https://www.currentscience.ac.in/Volumes/113/04/0707.pdf) is one of the largest and most sensitive fully operational low-frequency radio telescopes in the world situated in Pune, India.
- The array consists  of 30 antennas, each of 45 m diameter,  spread over distances of upto 25 km.
- 
- {{ scaledimage(src="GMRT_Pune.jpg", alt="GMRT", width="70%") }}
- 
-  Using GMRT I studied the statistical properties of the Diffuse Galactic synchrotron radiation and effect of DI and DD calibration ({{ arxiv(id="1906.01655") }}), the distribution of point sources and spectral properties of galactic foreground ({{ arxiv(id="1908.10380") }}), the angular clustering properties of 
- different source populations, such as AGNs, SFGs, etc ({{ arxiv(id="2002.12383") }}). I also have investigated the effect of missing channels due to RFI flagging in the estimation
-of cosmological HI power spectrum ({{ arxiv(id="2203.04994") }}). Finally, I put the constraint on the cosmological HI signal at redshift 1.96-3.58 using the uGMRT for the first time ({{ arxiv(id="2012.04674") }}).
+[Read the paper (MNRAS)](https://doi.org/10.1093/mnras/stac3696) · [arXiv:2301.05987](https://arxiv.org/abs/2301.05987)
+{% end %}
 
- {{ scaledimage(src="Upper_lim.jpg", alt="Upper lim", width="100%") }}
- 
- 
-I am still working on developing and improving the calibration algorithm and RFI mitigation strategy at low-frequency to improve the limit on HI signal using GMRT.
-
-
-
-## Strong Gravitational Lensing: A nature's gift
-
-I also work on the observation of HI 21 cm line emission from an individual galaxy at high redshift using strong gravitational lensing. This 21 cm is the only direct tracer of the neutral atomic gas content in a galaxy.  Unfortunately, this hyperfine transition is highly forbidden,  hence the strength of this emission line is extremely weak. It is nearly impossible to detect this line emission from a distant galaxy at redshift above 0.4  using the existing telescope in the world. The measurement of HI masses of individual galaxies at redshift greater than one would require a very long integration time with today's radio telescope or the large collecting area of the [Square Kilometer Array](https://www.skao.int/) (SKA).
-
- {{ scaledimage(src="strong_lensing.png", alt="lens", width="100%") }}
- 
-However, one can use the strong gravitational lens, nature’s gift, which magnifies the weak emission signal coming from distant objects, enabling us to peer through the high redshift universe. We used this technique and reported the first detection of HI 21 cm emission from a star-forming galaxy at redshift 1.3 (nearly 9 billion years ago) using uGMRT ({{ arxiv(id="2301.05987") }}). In
-our study, the weak 21cm emission signal from the distant background galaxy is strongly boosted by the gravitational lens an early-type elliptical galaxy, which resides in between us (the observer) and the background galaxy. Due to the strong magnification by the lens, we are able to detect the HI 21cm emission from the distant background galaxy and measure  the atomic hydrogen mass of this individual galaxy at such a large cosmological distance for the first time with a moderate  telescope observing time. 
-
-{{ scaledimage(src="spectrum_im.jpg", alt="lens", width="100%") }}
-
-
-The most accurate listing of my papers can be found here [NASA ADS]("https://ui.adsabs.harvard.edu/search/q=docs(library%2F0M0G3dsjSNeXotLDUmsR6Q)&sort=date%20desc%2C%20bibcode%20desc&p_=0").
-
+The complete and most current publication list is available through [NASA ADS](https://ui.adsabs.harvard.edu/search/q=docs(library%2F0M0G3dsjSNeXotLDUmsR6Q)&sort=date%20desc%2C%20bibcode%20desc&p_=0).
