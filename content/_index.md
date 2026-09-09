@@ -1,9 +1,10 @@
 +++
 title = "Arnab Chakraborty"
-description = "Radio astronomer and observational cosmologist working on 21 cm intensity mapping, large-scale structure, calibration, and foreground mitigation."
-
+description = "Arnab Chakraborty is a radio astronomer and observational cosmologist using neutral hydrogen to study large-scale structure, cosmic expansion, and reionization."
 +++
 
-I am a radio astronomer and observational cosmologist focusing on mapping the large-scale structure of the Universe with radio surveys of the 21 cm line from neutral hydrogen. My main research goals are to understand instrumental systematics and foreground challenges and developing tools to mitigate those to extract extremely weak  cosmological 21 cm signal from complex radio data. I develop analysis pipelines that separate extremely faint cosmological signals from bright astrophysical foregrounds and complex instrumental systematics.
+I am a radio astronomer and observational cosmologist at the **Dunlap Institute for Astronomy and Astrophysics, University of Toronto**. I use the redshifted 21 cm emission from neutral hydrogen to study how structure formed and how the Universe evolved across cosmic time.
 
-I am currently a Dunlap Postdoctoral Fellow at the University of Toronto. My work spans [CHIME](https://chime-experiment.ca/), [CHORD](https://www.chord-observatory.ca/), the [upgraded GMRT](https://www.gmrt.ncra.tifr.res.in/), and the [Square Kilometre Array Observatory](https://www.skao.int/).
+My research brings together **21 cm intensity mapping, radio-interferometric calibration, foreground mitigation, and statistical signal recovery**. I work with CHIME, CHORD, the upgraded GMRT, and the SKA Observatory, developing methods to recover cosmological signals that are far fainter than foreground emission and instrumental systematics. I recently led the first detection of the cosmological 21 cm auto-power spectrum using CHIME maps alone.
+
+My long-term aim is to turn large radio datasets into precise and reliable measurements of the Universe. By mapping neutral hydrogen—from post-reionization large-scale structure to the late stages of reionization through the 21 cm Forest—I hope to trace the growth of the cosmic web, probe the expansion history, and understand the thermal evolution of intergalactic gas.
