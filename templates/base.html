@@ -1,2 +1,76 @@
-{% extends "kodama-theme/templates/base.html" %}
-{% block footer %}{% endblock %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    {% block meta %}<meta name="description" content="{{ config.description }}">{% endblock meta %}
+    <meta name="author" content="{{ config.title }}">
+    <meta name="keywords" content="radio astronomy, cosmology, 21 cm intensity mapping, CHIME, CHORD, uGMRT">
+    <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+    <link rel="icon" type="image/png" href="{{ get_url(path='favicon.png') }}">
+    <link rel="stylesheet" href="{{ get_url(path='styles/site.css', cachebust=true) }}">
+    <script>
+      (function () {
+        const saved = localStorage.getItem("theme");
+        const preferred = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        document.documentElement.dataset.theme = saved || preferred;
+      })();
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="{{ config.base_url }}" aria-label="Arnab Chakraborty, home">
+          <strong>Arnab</strong> Chakraborty
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">
+          <span class="sr-only">Open navigation</span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+
+        <nav class="site-nav" id="site-navigation" aria-label="Primary navigation">
+          {% set active_path = current_path | default(value="") %}
+          {% for item in config.extra.menu_items %}
+            <a href="{{ item.path }}"{% if active_path == item.path %} aria-current="page"{% endif %}>{{ item.name }}</a>
+          {% endfor %}
+          <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch color theme">
+            <svg class="theme-icon theme-icon--sun" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="4"></circle>
+              <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.65 17.65l1.42 1.42M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.65 6.35l1.42-1.42"></path>
+            </svg>
+            <svg class="theme-icon theme-icon--moon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"></path>
+            </svg>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      {% block content %}{% endblock content %}
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="shell footer-grid">
+        <div>
+          <p class="footer-name">Arnab Chakraborty</p>
+          <p>{{ config.extra.role }} · {{ config.extra.affiliation }}</p>
+        </div>
+        <div class="footer-links" aria-label="Contact and profiles">
+          <a href="mailto:{{ config.extra.email }}">Email</a>
+          <a href="{{ config.extra.github }}" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="{{ config.extra.orcid }}" target="_blank" rel="noopener noreferrer">ORCID</a>
+          <a href="{{ config.extra.ads }}" target="_blank" rel="noopener noreferrer">NASA ADS</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="{{ get_url(path='scripts/site.js', cachebust=true) }}" defer></script>
+  </body>
+</html>

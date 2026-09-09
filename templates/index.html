@@ -1,57 +1,83 @@
-{% extends "kodama-theme/templates/index.html" %}
+{% extends "base.html" %}
 
-{% block biography %}
-<div class="">
-  <div class="flex md:flex-row flex-wrap sm:flex-nowrap justify-center container mx-auto max-w-5xl py-10 px-4">
-    <div class="basis-full sm:basis-2/5 ">
-      <div class="container mx-auto">
-        {% set image = resize_image(path=config.extra.avatar, format="webp", width=208, height=208) %}
-        <img class="object-center w-52 h-52 rectangle mx-auto" src="{{image.url}}" alt="Profile image"/>
-        <h1 class="text-center font-bold break-normal text-gray-900 text-3xl py-1">{{ config.title }}</h1>
-        {% if section.extra.title %}
-        <h2 class="text-center font-bold break-normal text-gray-400 text-lg py-1">{{ section.extra.title }}</h2>
-        {% endif %}
-        <div class="flex flex-row flex-wrap container py-10 justify-center">
-          {% for icon in section.extra.avatar_icons %}
-            <div class="basis p-3 ">
-              <a href="{{icon.link}}" target="_blank"><i>{{ icons::factory(icon=icon.icon,classes="inline h-12 w-12 flex-no-shrink stroke-blue-600 hover:stroke-blue-800 visited:stroke-purple-600 fill-blue-600 visited:fill-purple-600 hover:fill-blue-800 ") }}</i></a>
-            </div>
-          {% endfor %}
+{% block title %}{{ config.title }} · {{ config.extra.role }}{% endblock title %}
+
+{% block meta %}<meta name="description" content="{{ section.description }}">{% endblock meta %}
+
+{% block content %}
+  <div class="shell home-shell">
+    <section class="hero" aria-labelledby="intro-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Radio astronomy · Cosmology · 21 cm science</p>
+        <h1 id="intro-title">Arnab Chakraborty</h1>
+        <p class="hero-role">{{ config.extra.role }}</p>
+        <p class="hero-affiliation">
+          <a href="https://www.dunlap.utoronto.ca/" target="_blank" rel="noopener noreferrer">Dunlap Institute for Astronomy and Astrophysics</a><br>
+          University of Toronto · {{ config.extra.location }}
+        </p>
+        <div class="hero-body prose">
+          {{ section.content | safe }}
+        </div>
+        <div class="hero-actions">
+          <a class="button button--primary" href="/Research/">Explore my research</a>
+          <a class="button" href="/CV/Academic_CV_Arnab_Chakraborty.pdf">Download CV</a>
         </div>
       </div>
-    </div>
-    <div class="basis-full sm:basis-3/5">
-      <h1 class="font-bold font-sans break-normal text-gray-900 text-3xl sm:text-5xl pb-4"></h1>
-      <article class="prose prose-indigo prose">
-      {{ section.content | safe }}
-      </article>
-      <div class="flex md:flex-row flex-wrap sm:flex-nowrap justify-center container mx-auto max-w-4xl sm:py-10 py-4">
-        <div class="basis-full sm:basis-1/2 pb-4">
-          <h2 class="font-bold font-sans break-normal text-gray-900 text-2xl py-1">Interests</h2>
-          <ul class="list-disc pl-4">
-            {% for interest in section.extra.interests %}
-            <li class="py-1"> {{ interest }} </li>
-            {% endfor %}
-          </ul>
+
+      <figure class="profile-figure">
+        <div class="profile-frame">
+          <img src="{{ get_url(path='profile-2025.jpg') }}" alt="Portrait of Arnab Chakraborty" width="1123" height="1600">
         </div>
-        <div class="basis-full sm:basis-1/2">
-          <h2 class="font-bold font-sans break-normal text-gray-900 text-2xl py-1">Career</h2>
-          <ul class="">
-            {% for course in section.extra.education.courses %}
-            <li class="py-1">
-              <div class="flex flex-row flex-wrap">
-                <div class="basis-full">
-                  <i>{{ icons::factory(icon="academic",classes="inline h-6 w-6 flex-no-shrink") }}</i> {{ course.course }}, {{ course.year }}
-                </div>
-                <div class="basis-full text-gray-400">
-                {{ course.institution }}
-                </div>
-              </div>
-            </li>
-            {% endfor %}
-          </ul>
-        </div>
+        <figcaption>Observational cosmologist working with CHIME, CHORD, uGMRT, and SKAO.</figcaption>
+      </figure>
+    </section>
+
+    <section class="focus-strip" aria-label="Current research focus">
+      <div>
+        <span class="focus-value">12.4σ</span>
+        <span class="focus-label">CHIME auto-power detection</span>
       </div>
-    </div>
+      <div>
+        <span class="focus-value">z ≈ 1</span>
+        <span class="focus-label">21 cm intensity mapping</span>
+      </div>
+      <div>
+        <span class="focus-value">z ≈ 5.6</span>
+        <span class="focus-label">21 cm Forest constraints</span>
+      </div>
+    </section>
+
+    <section class="home-section" aria-labelledby="selected-work-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Selected work</p>
+          <h2 id="selected-work-title">Recovering faint signals from complex radio data</h2>
+        </div>
+        <a class="text-link" href="/Research/">All research <span aria-hidden="true">→</span></a>
+      </div>
+
+      <div class="highlight-grid">
+        {% for highlight in section.extra.highlights %}
+          <article class="highlight-card">
+            <p class="card-meta">{{ highlight.meta }}</p>
+            <h3>{{ highlight.title }}</h3>
+            <p>{{ highlight.summary }}</p>
+            <a href="{{ highlight.link }}">{{ highlight.link_text }} <span aria-hidden="true">→</span></a>
+          </article>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section class="home-section home-section--compact" aria-labelledby="questions-title">
+      <div class="section-heading section-heading--stacked">
+        <p class="eyebrow">Research questions</p>
+        <h2 id="questions-title">What I am trying to understand</h2>
+      </div>
+      <ul class="question-list">
+        <li>How can neutral hydrogen trace the growth of large-scale structure and the expansion history of the Universe?</li>
+        <li>How can calibration, foreground mitigation, and statistical validation reveal cosmological signals far below instrumental contamination?</li>
+        <li>What can the 21 cm Forest tell us about the thermal state of neutral gas near the end of reionization?</li>
+      </ul>
+    </section>
   </div>
-  {% endblock biography %}
+{% endblock content %}

@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}Page not found · {{ config.title }}{% endblock title %}
+
+{% block content %}
+  <section class="shell not-found">
+    <p class="eyebrow">404</p>
+    <h1>That page is not here.</h1>
+    <p>The address may have changed during the site redesign.</p>
+    <a class="button button--primary" href="{{ config.base_url }}">Return home</a>
+  </section>
+{% endblock content %}
