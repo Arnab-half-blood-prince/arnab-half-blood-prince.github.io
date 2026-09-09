@@ -1,36 +1,29 @@
 +++
-[extra]
+title = "Arnab Chakraborty"
+description = "Radio astronomer and observational cosmologist working on 21 cm intensity mapping, large-scale structure, calibration, and foreground mitigation."
 
-title = "Trottier Chair Fellow"
-interests = [
-    "Cosmology",
-    "Radio astronomy",
-    "Statistics",
-    "Signal processing",
-    "Strong Gravitational lensing",
-    "Star-formation history",
-]
+[[extra.highlights]]
+meta = "CHIME · 2026"
+title = "First cosmological 21 cm auto-power spectrum detection"
+summary = "I led the analysis that recovered the cosmological 21 cm signal from CHIME maps alone at 12.4σ, opening a new route to large-scale structure measurements at z > 1."
+link = "/Research/#chime-auto-power"
+link_text = "Read about the measurement"
 
-avatar_icons = [
+[[extra.highlights]]
+meta = "21 cm Forest · 2026"
+title = "The neutral intergalactic medium at z ≈ 5.6"
+summary = "I co-led work using the 21 cm Forest power spectrum to constrain the thermal state of neutral hydrogen near the end of reionization."
+link = "/Research/#forest"
+link_text = "Explore the Forest work"
 
-]
-#  icon = "github"
-#  link = "https://github.com/Arnab-half-blood-prince/"
-
-[[extra.education.courses]]
-  course = "Post-doc"
-  institution = "McGiil Univesrity"
-  year = "November 2021—present"
-[[extra.education.courses]]
-  course = "Ph.D"
-  institution = "Indian Institute of Technology, Indore"
-  year = "July 2016 - September 2021"
-
+[[extra.highlights]]
+meta = "CHORD · Commissioning"
+title = "Calibrating a next-generation radio telescope"
+summary = "I work on calibration, commissioning, and intensity-mapping analysis for CHORD as its 512-dish array takes shape at DRAO."
+link = "/Research/#chord"
+link_text = "Learn about CHORD"
 +++
-I'm a Trottier Chair Fellow at the [Trottier Space Institute](https://tsi.mcgill.ca/)  and [McGill University](https://www.physics.mcgill.ca/). I am data oriented cosmologist and radio astronomer focusing on mapping the large-scale structure of the Universe with radio surveys of the 21 cm line from neutral hydrogen. My main research goals are to understand instrumental systematics and foreground challenges and developing tools to mitigate those to extract extremely weak  cosmological 21 cm signal from complex radio data. Currently I am working on measuring 21 cm signal in auto-correlation using [CHIME](https://chime-experiment.ca), a novel radio interferometer designed for wide-field high sensitivity surveys. I am also a member of [CHORD](https://www.chord-observatory.ca/), a next generation radio telescope coming up at Pentiction, British Columbia. 
 
-In addition to these, I am also intersted in using [strong gravitational lensing](https://arxiv.org/abs/2301.05987) to detect 21 cm line emission from a individual galaxy at high redshift to measure galaxy's atomic gas content, which acts as a basic fuel of star-formation inside a galaxy. This eventually helps us to understand the evolution of galaxies and star-formation history over cosmic time. 
+I am a radio astronomer and observational cosmologist working on **21 cm intensity mapping, large-scale structure, and foreground mitigation**. I develop analysis pipelines that separate extremely faint cosmological signals from bright astrophysical foregrounds and complex instrumental systematics.
 
-For more details about my work please see the Research page.
- 
-
+I am currently a Dunlap Postdoctoral Fellow at the University of Toronto. My work spans [CHIME](https://chime-experiment.ca/), [CHORD](https://www.chord-observatory.ca/), the [upgraded GMRT](https://www.gmrt.ncra.tifr.res.in/), and the [Square Kilometre Array Observatory](https://www.skao.int/).
