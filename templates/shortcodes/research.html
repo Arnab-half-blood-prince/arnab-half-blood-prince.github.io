@@ -1,0 +1,11 @@
+<section id="{{ id }}" class="research-entry{% if reverse | default(value=false) %} research-entry--reverse{% endif %}">
+  <figure class="research-figure">
+    <img src="{{ image }}" alt="{{ alt }}" loading="lazy" decoding="async">
+    {% if caption %}<figcaption>{{ caption }}</figcaption>{% endif %}
+  </figure>
+  <div class="research-copy">
+    <p class="card-meta">{{ meta }}</p>
+    <h2>{{ title }}</h2>
+    <div>{{ body | markdown | safe }}</div>
+  </div>
+</section>
