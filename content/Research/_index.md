@@ -1,15 +1,16 @@
 +++
 title = "Overview"
+description = "I use radio observations, statistical inference, and end-to-end analysis pipelines to study the evolution of cosmic structure using 21 cm Line Intensity Mapping."
 template = "simple-section.html"
 +++
 
 <p class="research-intro">I am primarily interested in analyzing radio data and extract scientific information from that to better understand the Universe and learn fundamental physics. To probe the history and evolution of the Universe I use the 21 cm line emission of neutral hydrogen, which can be used to trace the cosmic history.
 Below a more detailed description of my research is provided.</p>
 
-{% research(id="chime-auto-power", meta="CHIME · Post-reionization intensity mapping", title="The first cosmological 21 cm auto-power detection", image="chime-auto-power.png", alt="Measured CHIME 21 cm auto-power spectrum with red data points, a black best-fit curve, blue imaginary-component points, and residuals", caption="CHIME auto-power measurement. The imaginary component and lower residual panel provide stringent null tests.") %}
-As science lead within the CHIME collaboration, I designed and built the analysis that delivered the first detection of the cosmological 21 cm auto-power spectrum from CHIME maps alone. The pipeline combines adaptive RFI mitigation, achromatic beamforming, foreground filtering, and a comprehensive validation suite.
+{% research(id="chime-auto-power", meta="CHIME · Post-reionization intensity mapping", title="The first cosmological 21 cm auto-power detection", image="chime-auto-power.png", alt="Measured CHIME 21 cm auto-power spectrum with red data points, a black best-fit curve, blue imaginary-component points, and residuals", caption="CHIME auto-power spectrum measurement. The black line is the best-fit model to the data and bottom panel shows the residual.") %}
+As science lead within the CHIME collaboration, I designed and built the analysis pipeline that delivered the first detection of the cosmological 21 cm auto-power spectrum from CHIME maps alone. The pipeline combines adaptive RFI mitigation, achromatic beamforming, foreground filtering, and a comprehensive validation suite.
 
-The measurement reaches **12.4σ at z ≈ 1.16**. I also co-led the companion interpretation work, which connects the measurement to the abundance and clustering of neutral hydrogen and compares it with IllustrisTNG.
+The measurement reaches **12.4σ at z ≈ 1.16**. We also show in a companion interpretation work, which connects the measurement to the abundance and clustering of neutral hydrogen and compares it with IllustrisTNG.
 
 [Detection paper (arXiv:2511.19620)](https://arxiv.org/abs/2511.19620) · [Interpretation paper (arXiv:2603.25680)](https://arxiv.org/abs/2603.25680)
 {% end %}
