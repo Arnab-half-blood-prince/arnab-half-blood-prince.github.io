@@ -1,7 +1,5 @@
 +++
 title = "Overview"
-description = "I am primarily interested in analyzing radio data and extract scientific information from that to better understand the Universe and learn fundamental physics. 
-To probe the history and evolution of the Universe I use the 21 cm line emission of neutral hydrogen, which can be used to trace the cosmic history. Below a more detailed description of my research is provided."
 template = "simple-section.html"
 +++
 
