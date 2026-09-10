@@ -106,7 +106,7 @@ eyebrow = "Communication and mentoring"
   </li>
 </ul>
 
-<h2 id="teaching">University teaching</h2>
+<h2 id="teaching">Teaching Assistant during Ph.D</h2>
 
 <ul class="timeline">
   <li>
@@ -116,29 +116,6 @@ eyebrow = "Communication and mentoring"
   <li>
     <time>2017–2019</time>
     <div><strong>Radio Astronomy and Radiative Transfer (teaching assistant)</strong><span>IIT Indore · tutorials and assessments for M.Sc. and first-year PhD students</span></div>
-  </li>
-</ul>
-
-<p>My teaching rests on three things: active learning in place of passive lecturing, conceptual clarity before formalism, and hands-on engagement with real research data. Each topic starts from a concrete physical scenario, usually a real dataset or an instrumental effect, and the theory emerges from the question of how to handle it.</p>
-
-<h2 id="students">Students supervised</h2>
-
-<ul class="timeline">
-  <li>
-    <time>2021–present</time>
-    <div><strong>Rashmi Sagar</strong><span>PhD, IIT Indore · “Characterising foregrounds and constraining the HI 21 cm signal from the Epoch of Reionization with the uGMRT”</span></div>
-  </li>
-  <li>
-    <time>2023–2025</time>
-    <div><strong>Kyle Miller</strong><span>MSc, McGill University · “Searching for OH megamasers with CHIME”</span></div>
-  </li>
-  <li>
-    <time>2018–2024</time>
-    <div><strong>Akriti Sinha</strong><span>PhD, IIT Indore · “Star formation in radio deep fields: a multi-wavelength perspective” · now at the Max Planck Institute for Solar System Research</span></div>
-  </li>
-  <li>
-    <time>2017–2022</time>
-    <div><strong>Aishrila Mazumder</strong><span>PhD, IIT Indore · “Characterization of foregrounds and systematics for sensitive radio observations” · now at Shanghai Astronomical Observatory</span></div>
   </li>
 </ul>
 
