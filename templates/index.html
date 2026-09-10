@@ -20,25 +20,27 @@
           {{ section.extra.lead | markdown | safe }}
         </div>
         {% endif %}
-        <nav class="profile-links" aria-label="Contact and academic profiles">
-          <a href="mailto:{{ config.extra.email }}">Email</a>
-          <a href="{{ config.extra.github }}" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="{{ config.extra.linkedin }}" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a href="{{ config.extra.orcid }}" target="_blank" rel="noopener noreferrer">ORCID</a>
-          <a href="{{ config.extra.ads }}" target="_blank" rel="noopener noreferrer">NASA ADS</a>
-        </nav>
       </div>
 
-      <figure class="profile-figure">
-        <div class="profile-frame">
-          <img src="/profile-2025.jpg" alt="Portrait of Arnab Chakraborty" width="1123" height="1600">
-        </div>
-
-      </figure>
+      <div class="hero-aside">
+        <figure class="profile-figure">
+          <div class="profile-frame">
+            <img src="/profile-2025.jpg" alt="Portrait of Arnab Chakraborty" width="1123" height="1600">
+          </div>
+        </figure>
+      </div>
     </section>
 
     <div class="home-about prose">
       {{ section.content | safe }}
+
+      <nav class="profile-links" aria-label="Contact and academic profiles">
+        <a href="mailto:{{ config.extra.email }}">Email</a>
+        <a href="{{ config.extra.github }}" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="{{ config.extra.linkedin }}" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="{{ config.extra.orcid }}" target="_blank" rel="noopener noreferrer">ORCID</a>
+        <a href="{{ config.extra.ads }}" target="_blank" rel="noopener noreferrer">NASA ADS</a>
+      </nav>
     </div>
   </div>
 {% endblock content %}
