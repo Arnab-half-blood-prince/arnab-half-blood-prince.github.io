@@ -2,10 +2,13 @@
 title = "Overview"
 description = "I use radio observations, statistical inference, and end-to-end analysis pipelines to study the evolution of cosmic structure using 21 cm Line Intensity Mapping."
 template = "simple-section.html"
+
+[extra]
+eyebrow = "Science"
+page_class = "research-page"
 +++
 
-<p class="research-intro">I am primarily interested in analyzing radio data and extract scientific information from that to better understand the Universe and learn fundamental physics. To probe the history and evolution of the Universe I use the 21 cm line emission of neutral hydrogen, which can be used to trace the cosmic history.
-Below a more detailed description of my research is provided.</p>
+<p class="research-intro">My research connects instruments to cosmology: calibrating radio telescopes, flagging human made interference and removing foreground emission, and finally extracting weak 21 cm cosmological signal from complex datasets, and interpreting the recovered 21 cm signal. The projects below highlight my current and recent work.</p>
 
 {% research(id="chime-auto-power", meta="CHIME · Post-reionization intensity mapping", title="The first cosmological 21 cm auto-power detection", image="chime-auto-power.png", alt="Measured CHIME 21 cm auto-power spectrum with red data points, a black best-fit curve, blue imaginary-component points, and residuals", caption="CHIME auto-power spectrum measurement. The black line is the best-fit model to the data and bottom panel shows the residual.") %}
 As science lead within the CHIME collaboration, I designed and built the analysis pipeline that delivered the first detection of the cosmological 21 cm auto-power spectrum from CHIME maps alone. The pipeline combines adaptive RFI mitigation, achromatic beamforming, foreground filtering, and a comprehensive validation suite.
