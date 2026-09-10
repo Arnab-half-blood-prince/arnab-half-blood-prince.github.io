@@ -112,30 +112,6 @@ eyebrow = "Selected papers"
   </ol>
 </section>
 
-<section class="publication-group" id="reviews">
-  <h2>Co-led review articles</h2>
-  <ol class="publication-list">
-    <li>
-      <span class="publication-year">2026</span>
-      <div>
-        <span class="publication-title">Foreground characterization and mitigation in the observations of the CD/EoR with the SKA</span>
-        <span class="publication-authors">P. Bull, J. Burba, E. Ceccotti, <strong>A. Chakraborty</strong> (co-led), S. Choudhuri, A. Datta, et al.</span>
-        <span class="publication-venue">SKAO science chapter</span>
-        <span class="publication-links"><a href="https://arxiv.org/abs/2607.01048">arXiv</a></span>
-      </div>
-    </li>
-    <li>
-      <span class="publication-year">2023</span>
-      <div>
-        <span class="publication-title">Probing the early Universe through the redshifted 21-cm signal: modelling and observational challenges</span>
-        <span class="publication-authors">A. K. Shaw, <strong>A. Chakraborty</strong> (co-led), M. Kamran, R. Ghara, S. Choudhuri, et al.</span>
-        <span class="publication-venue">Journal of Astrophysics and Astronomy, 44, 1 · Special issue on Indian participation in the SKA</span>
-        <span class="publication-links"><a href="https://doi.org/10.1007/s12036-022-09889-6">DOI</a></span>
-      </div>
-    </li>
-  </ol>
-</section>
-
 <section class="publication-group" id="students">
   <h2>Led by students I supervised</h2>
   <p class="group-note">Papers first-authored by PhD students I co-supervised at IIT Indore.</p>
@@ -188,63 +164,5 @@ eyebrow = "Selected papers"
   </ol>
 </section>
 
-<section class="publication-group" id="collaboration">
-  <h2>Selected collaboration papers</h2>
-  <ol class="publication-list">
-    <li>
-      <span class="publication-year">2026</span>
-      <div>
-        <span class="publication-title">Overview of the Canadian Hydrogen Observatory and Radio Transient Detector (CHORD) project</span>
-        <span class="publication-authors">CHORD Collaboration, including <strong>A. Chakraborty</strong></span>
-        <span class="publication-links"><a href="https://arxiv.org/abs/2607.09374">arXiv</a></span>
-      </div>
-    </li>
-    <li>
-      <span class="publication-year">2026</span>
-      <div>
-        <span class="publication-title">Discovery of a 21 cm Absorption System at z = 2.327 with CHIME</span>
-        <span class="publication-authors">CHIME Collaboration, including <strong>A. Chakraborty</strong></span>
-        <span class="publication-venue">The Astrophysical Journal, 998, 310</span>
-        <span class="publication-links"><a href="https://doi.org/10.3847/1538-4357/ae3de7">DOI</a></span>
-      </div>
-    </li>
-    <li>
-      <span class="publication-year">2026</span>
-      <div>
-        <span class="publication-title">Mitigating antenna gain errors with hybrid foreground residual subtraction in CHIME simulations</span>
-        <span class="publication-authors">H. Wang, P. Phoompuang, K. W. Masui, <strong>A. Chakraborty</strong>, S. Foreman, and C. Höfer</span>
-        <span class="publication-venue">Physical Review D, 113, 4</span>
-        <span class="publication-links"><a href="https://doi.org/10.1103/1pp6-x3mb">DOI</a></span>
-      </div>
-    </li>
-    <li>
-      <span class="publication-year">2025</span>
-      <div>
-        <span class="publication-title">Square Kilometre Array Science Data Challenge 3a: foreground removal for an EoR experiment</span>
-        <span class="publication-authors">A. Bonaldi, P. Hartley, R. Braun, S. Purser, including <strong>A. Chakraborty</strong> (lead, SKA-India team <em>Akashganga</em>)</span>
-        <span class="publication-venue">Monthly Notices of the Royal Astronomical Society, 543, 1092</span>
-        <span class="publication-links"><a href="https://doi.org/10.1093/mnras/staf1466">DOI</a></span>
-      </div>
-    </li>
-    <li>
-      <span class="publication-year">2024</span>
-      <div>
-        <span class="publication-title">A Detection of Cosmological 21 cm Emission from CHIME in Cross-correlation with eBOSS Measurements of the Ly-α Forest</span>
-        <span class="publication-authors">CHIME Collaboration, including <strong>A. Chakraborty</strong></span>
-        <span class="publication-venue">The Astrophysical Journal, 963, 23</span>
-        <span class="publication-links"><a href="https://doi.org/10.3847/1538-4357/ad0f1d">DOI</a></span>
-      </div>
-    </li>
-    <li>
-      <span class="publication-year">2024</span>
-      <div>
-        <span class="publication-title">Holographic Beam Measurements of the Canadian Hydrogen Intensity Mapping Experiment (CHIME)</span>
-        <span class="publication-authors">CHIME Collaboration, including <strong>A. Chakraborty</strong></span>
-        <span class="publication-venue">The Astrophysical Journal, 976, 163</span>
-        <span class="publication-links"><a href="https://doi.org/10.3847/1538-4357/ad8133">DOI</a></span>
-      </div>
-    </li>
-  </ol>
-</section>
 
-<p>Bibliometrics as of August 2026: roughly 603 citations, h-index 17, i10-index 21. NASA ADS remains the authoritative source for current publication and citation information.</p>
+<p>Last updated in August 2026. NASA ADS remains the authoritative source for current publication and citation information.</p>
