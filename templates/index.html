@@ -8,16 +8,18 @@
   <div class="shell home-shell">
     <section class="hero" aria-labelledby="intro-title">
       <div class="hero-copy">
-        
+
         <h1 id="intro-title">Arnab Chakraborty</h1>
         <p class="hero-role">{{ config.extra.role }}</p>
         <p class="hero-affiliation">
           <a href="https://www.dunlap.utoronto.ca/" target="_blank" rel="noopener noreferrer">Dunlap Institute for Astronomy and Astrophysics</a><br>
           University of Toronto · {{ config.extra.location }}
         </p>
+        {% if section.extra.lead %}
         <div class="hero-body prose">
-          {{ section.content | safe }}
+          {{ section.extra.lead | markdown | safe }}
         </div>
+        {% endif %}
         <nav class="profile-links" aria-label="Contact and academic profiles">
           <a href="mailto:{{ config.extra.email }}">Email</a>
           <a href="{{ config.extra.github }}" target="_blank" rel="noopener noreferrer">GitHub</a>
@@ -31,8 +33,12 @@
         <div class="profile-frame">
           <img src="/profile-2025.jpg" alt="Portrait of Arnab Chakraborty" width="1123" height="1600">
         </div>
-        
+
       </figure>
     </section>
+
+    <div class="home-about prose">
+      {{ section.content | safe }}
+    </div>
   </div>
 {% endblock content %}
