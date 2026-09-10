@@ -1,8 +1,8 @@
 +++
 title = "Arnab Chakraborty"
 description = "I am a radio astronomer and observational cosmologist using neutral hydrogen to study large-scale structure, cosmic expansion, and reionization."
-+++
 
+[extra]
 lead = "I am a radio astronomer and observational cosmologist at the **Dunlap Institute for Astronomy and Astrophysics, University of Toronto**. I use the redshifted 21 cm line of neutral hydrogen to trace how cosmic structure formed and how the Universe has evolved, working with [CHIME](https://chime-experiment.ca/), [CHORD](https://www.chord-observatory.ca/), and the [upgraded GMRT](http://www.ncra.tifr.res.in/ncra/gmrt). I led the first detection of the cosmological 21 cm auto-power spectrum from the maps of a single instrument: [12.4σ at z ≈ 1.16 with CHIME](https://arxiv.org/abs/2511.19620)."
 +++
 
