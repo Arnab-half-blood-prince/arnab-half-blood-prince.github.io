@@ -3,7 +3,7 @@ title = "Arnab Chakraborty"
 description = "I am a radio astronomer and observational cosmologist using neutral hydrogen to study large-scale structure, cosmic expansion, and reionization."
 
 [extra]
-lead = "I am a radio astronomer and observational cosmologist at the **Dunlap Institute for Astronomy and Astrophysics, University of Toronto**. I use the redshifted 21 cm line of neutral hydrogen to trace how cosmic structure formed and how the Universe has evolved, working with [CHIME](https://chime-experiment.ca/), [CHORD](https://www.chord-observatory.ca/), and the [upgraded GMRT](http://www.ncra.tifr.res.in/ncra/gmrt). I led the first detection of the cosmological 21 cm auto-power spectrum from the maps of a single instrument: [12.4σ at z ≈ 1.16 with CHIME](https://arxiv.org/abs/2511.19620)."
+lead = "I am a radio astronomer and observational cosmologist at the **Dunlap Institute for Astronomy and Astrophysics, University of Toronto**. I use the redshifted 21 cm line of neutral hydrogen to trace how cosmic structure formed and how the Universe has evolved. I am fortunate to work with some of the powerful telescopes in the world, such as  [CHIME](https://chime-experiment.ca/), [CHORD](https://www.chord-observatory.ca/), and the [upgraded GMRT](http://www.ncra.tifr.res.in/ncra/gmrt). Recently, I led the first highest redshift detection of the cosmological 21 cm auto-power spectrum using [CHIME](https://arxiv.org/abs/2511.19620)."
 +++
 
 
@@ -11,7 +11,7 @@ The 21 cm line is the only practical probe that can map cosmic history in three 
 
 Getting there is hard for one reason above all others. Galactic and extragalactic foregrounds are four to five orders of magnitude brighter than the signal, and they are coupled to a chromatic instrument response through the primary beam, mutual coupling between elements, and time- and frequency-dependent gains. Most of my work is developing  analysis tools that separates the two: calibration, RFI mitigation, beam characterisation, foreground filtering, and the validation framework that decides whether a detection is real rather than an artefact.
 
-Some of the broad questions my research aims to address are:
+## Some of the broad questions my research aims to address are:
 
 - Is dark energy a cosmological constant, or is it evolving? Can measurement of BAO using 21 cm line intensity mapping test this independently of optical surveys, and place competitive bounds on the sum of the neutrino masses?
 - How did first stars and galaxies formed? What is the reionization history and how did it progress? When reionization end? Can we use the 21 cm Forest as a complementary probe to EoR using upcoming SKA and pathfinder telescopes like uGMRT? 
