@@ -391,7 +391,9 @@ html[data-theme="dark"] .theme-icon--moon {
 
 .home-about {
   max-width: 760px;
-  margin-top: clamp(2.5rem, 5vw, 3.75rem);
+  margin-top: clamp(2.75rem, 5vw, 4rem);
+  padding-top: clamp(2.25rem, 4vw, 3rem);
+  border-top: 1px solid var(--line);
 }
 
 .prose.home-about h2 {
@@ -651,6 +653,17 @@ html[data-theme="dark"] .theme-icon--moon {
   margin: -1.5rem 0 5rem;
   color: var(--muted);
   font-size: 1.08rem;
+}
+
+.publication-star {
+  margin-right: 0.4rem;
+  color: var(--accent-strong);
+  font-size: 0.85em;
+  vertical-align: 0.12em;
+}
+
+.group-note .publication-star {
+  margin-right: 0.25rem;
 }
 
 .group-note {
