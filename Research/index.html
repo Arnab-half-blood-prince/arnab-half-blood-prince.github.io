@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <meta name="description" content="I use radio observations, statistical inference, and end-to-end analysis pipelines to study the evolution of cosmic structure using 21 cm Line Intensity Mapping.">
+    <meta name="author" content="Arnab Chakraborty">
+    <meta name="keywords" content="radio astronomy, cosmology, 21 cm intensity mapping, CHIME, CHORD, uGMRT">
+    <title>Overview · Arnab Chakraborty</title>
+    <link rel="icon" type="image/png" href="https://arnab-half-blood-prince.github.io/favicon.png">
+    <link rel="stylesheet" href="https://arnab-half-blood-prince.github.io/styles/site.css?h=305f1d1e1d4a801d3674">
+    <script>
+      (function () {
+        const saved = localStorage.getItem("theme");
+        const preferred = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        document.documentElement.dataset.theme = saved || preferred;
+      })();
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="https:&#x2F;&#x2F;arnab-half-blood-prince.github.io" aria-label="Arnab Chakraborty, home">
+          <strong>Arnab</strong> Chakraborty
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">
+          <span class="sr-only">Open navigation</span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+
+        <nav class="site-nav" id="site-navigation" aria-label="Primary navigation">
+          
+          
+            <a href="&#x2F;Research&#x2F;" aria-current="page">Research</a>
+          
+            <a href="&#x2F;Publications&#x2F;">Publications</a>
+          
+            <a href="&#x2F;Softwares&#x2F;">Software</a>
+          
+            <a href="&#x2F;Resources&#x2F;">Resources</a>
+          
+            <a href="&#x2F;Talks&#x2F;">Talks</a>
+          
+            <a href="&#x2F;CV&#x2F;">CV</a>
+          
+          <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch color theme">
+            <svg class="theme-icon theme-icon--sun" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="4"></circle>
+              <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.65 17.65l1.42 1.42M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.65 6.35l1.42-1.42"></path>
+            </svg>
+            <svg class="theme-icon theme-icon--moon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"></path>
+            </svg>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      
+  <article class="shell page research-page">
+    <header class="page-header">
+      <p class="eyebrow">Science</p>
+      <h1>Overview</h1>
+      <p class="page-lede">I use radio observations, statistical inference, and end-to-end analysis pipelines to study the evolution of cosmic structure using 21 cm Line Intensity Mapping.</p>
+    </header>
+    <div class="page-content prose">
+      <p class="research-intro">My research connects instruments to cosmology: calibrating radio telescopes, flagging human-made interference, removing foreground emission, and extracting and interpreting the weak 21 cm cosmological signal that remains. The projects below cover my current and recent work.</p>
+<nav class="section-jump" aria-label="On this page">
+  <a href="#lim">Line intensity mapping</a>
+  <a href="#chime-auto-power">CHIME</a>
+  <a href="#chord">CHORD</a>
+  <a href="#forest">21 cm forest</a>
+  <a href="#ugmrt">uGMRT</a>
+  <a href="#lensing">Lensing</a>
+</nav>
+<section id="lim" class="research-prose">
+<h2 id="line-intensity-mapping">Line intensity mapping</h2>
+<p>I want to understand how a nearly smooth early Universe grew into the complex web of structure we see today. <a rel="noopener noreferrer" target="_blank" href="https://arxiv.org/abs/1903.04496">Line intensity mapping</a> is an efficient way to attack that question. Rather than resolving individual galaxies, we make low-resolution maps of the sky at frequencies corresponding to atomic or molecular lines emitted in galaxies and in the intergalactic medium, and then measure the statistical fluctuations of the combined radiation field. A single survey covers an enormous cosmic volume, which is exactly the statistical power that precision cosmology needs.</p>
+<p>My focus is the <a rel="noopener noreferrer" target="_blank" href="https://arxiv.org/abs/astro-ph/9608010">21 cm line of neutral hydrogen</a>, the hyperfine transition that traces atomic gas from the present day back to <em>z</em> ∼ 30. Measuring its auto-correlation power spectrum maps the distribution of matter and gives access to the <a rel="noopener noreferrer" target="_blank" href="https://arxiv.org/abs/1201.2434">baryon acoustic oscillation</a> scale, the standard ruler that fixes the expansion history and therefore constrains the nature of <a rel="noopener noreferrer" target="_blank" href="https://en.wikipedia.org/wiki/Dark_energy">dark energy</a>.</p>
+<p>The obstacle is dynamic range. Galactic synchrotron emission and extragalactic point sources are four to five orders of magnitude brighter than the 21 cm signal, and that foreground is coupled to a chromatic instrument response through the primary beam, mutual coupling between elements, and time- and frequency-dependent gains. Separating the two is an instrumental problem as much as an astrophysical one, and it is where most of my effort goes. I am currently doing this with two instruments at the Dominion Radio Astrophysical Observatory.</p>
+</section>
+<section id="chime-auto-power" class="research-entry">
+  <figure class="research-figure">
+    <img src="chime-auto-power.png" alt="Measured CHIME 21 cm auto-power spectrum with red data points, a black best-fit curve, blue imaginary-component points, and residuals" loading="lazy" decoding="async">
+    <figcaption>CHIME auto-power spectrum measurement. The black line is the best-fit model to the data and bottom panel shows the residual.</figcaption>
+  </figure>
+  <div class="research-copy">
+    <p class="card-meta">CHIME · Post-reionization intensity mapping</p>
+    <h2>The first cosmological 21 cm auto-power detection</h2>
+    <div><p>The Canadian Hydrogen Intensity Mapping Experiment, <a rel="noopener noreferrer" target="_blank" href="https://chime-experiment.ca/">CHIME</a>, is a transit radio interferometer at the <a rel="noopener noreferrer" target="_blank" href="https://nrc.canada.ca/en/research-development/nrc-facilities/dominion-radio-astrophysical-observatory-research-facility">Dominion Radio Astrophysical Observatory</a> near Penticton, British Columbia. Four 20 m × 100 m cylindrical reflectors, with no moving parts, map the entire northern sky every day between 400 and 800 MHz. That band corresponds to neutral hydrogen at redshifts 0.8 to 2.5, which places CHIME squarely at the epoch where dark energy begins to dominate the expansion. It has been collecting data since 2018.</p>
+<p>As science lead within the collaboration, I designed and built the analysis pipeline that delivered the first detection of the cosmological 21 cm auto-power spectrum from CHIME maps alone, using 94 nights of 2019 data. The pipeline combines adaptive RFI mitigation for narrow-band and broadband interference, achromatic beamforming that holds the beam properties fixed across the band, foreground filtering applied before time-averaging to limit spectral leakage, and a comprehensive suite of validation tests.</p>
+<p>The measurement reaches <strong>12.4σ at z ≈ 1.16</strong> over 0.4 ≲ <em>k</em> ≲ 1.5 <em>h</em> Mpc⁻¹, independently confirmed in two redshift sub-bands at 8.6σ and 9.1σ. Every validation test returned an acceptable p-value, which is what separates a detection from a systematic artefact. A companion interpretation paper connects the measurement to the abundance and clustering of neutral hydrogen and finds significant tension with IllustrisTNG, driven by weaker non-linear redshift-space clustering in the simulations than in the data.</p>
+<p><a rel="noopener noreferrer" target="_blank" href="https://arxiv.org/abs/2511.19620">Detection paper (arXiv:2511.19620)</a> · <a rel="noopener noreferrer" target="_blank" href="https://arxiv.org/abs/2603.25680">Interpretation paper (arXiv:2603.25680)</a></p>
+</div>
+  </div>
+</section>
+<section id="chord" class="research-entry research-entry--reverse">
+  <figure class="research-figure">
+    <img src="chord-2026.jpg" alt="Aerial view of the CHORD dishes and CHIME cylinders at the Dominion Radio Astrophysical Observatory" loading="lazy" decoding="async">
+    <figcaption>CHORD at DRAO with 128 of its planned 512 antennas, 27 August 2026. Image: Bryan Schellenberg.</figcaption>
+  </figure>
+  <div class="research-copy">
+    <p class="card-meta">CHORD · Instrument commissioning</p>
+    <h2>Calibrating the next generation of wideband radio surveys</h2>
+    <div><p>The Canadian Hydrogen Observatory and Radio-transient Detector, <a rel="noopener noreferrer" target="_blank" href="https://www.chord-observatory.ca/">CHORD</a>, is CHIME's successor, under construction alongside it at DRAO. It will consist of 512 six-metre dishes in a compact, highly redundant array, with deep reflectors (f/D = 0.21) and ultra-wideband receivers covering 300 to 1500 MHz. Measured by bandwidth × field of view × sensitivity, CHORD will be roughly an order of magnitude more powerful than CHIME and the world-leading facility of its type. The first 128 antennas are on the ground and the pathfinder is being commissioned.</p>
+<p>I am a member of CHORD's calibration and intensity-mapping group and its HI galaxy survey group. My work covers commissioning data, characterising the radio-frequency environment at the site, sky-based and redundant calibration, and the analysis infrastructure that turns raw measurements into cosmological maps. Getting the calibration right at this stage is what will determine whether CHORD can reach the linear BAO scales that CHIME cannot.</p>
+<p><a rel="noopener noreferrer" target="_blank" href="https://www.chord-observatory.ca/">CHORD project</a> · <a rel="noopener noreferrer" target="_blank" href="https://arxiv.org/abs/2607.09374">CHORD overview (arXiv:2607.09374)</a></p>
+</div>
+  </div>
+</section>
+<section id="forest" class="research-entry">
+  <figure class="research-figure">
+    <img src="forest-spectrum.png" alt="Example residual 21 cm Forest spectrum versus observed frequency and comoving distance, showing absorption signal and simulated noise" loading="lazy" decoding="async">
+    <figcaption>An example noisy 21 cm Forest spectrum, illustrating the absorption structure targeted by the one-dimensional power-spectrum analysis.</figcaption>
+  </figure>
+  <div class="research-copy">
+    <p class="card-meta">Cosmic dawn · 21 cm absorption</p>
+    <h2>A forest without trees: neutral gas at z ≈ 5.6</h2>
+    <div><p>The <strong>21 cm Forest</strong> is a set of narrow absorption features imprinted by neutral intergalactic hydrogen on the spectra of distant radio sources. Unlike large-scale 21 cm emission experiments, it probes small-scale structure and the thermal state of the gas along an individual line of sight.</p>
+<p>We use archival uGMRT observations along the line of sight to a radio-loud QSO at a redshift of about 5.8 and estimate the one-dimensional 21 cm Forest power spectrum to constrain the thermal state of the neutral intergalactic medium at this redshift.  This approach shows that useful physical constraints can be extracted statistically from the noise-dominated spectrum and even when individual absorption features are difficult to identify. We now have another 50 hours of uGMRT data for this source, and work is underway to analyze it.  I am co-leading the work and was mainly involved in data analysis and proposal writing.</p>
+<p><a rel="noopener noreferrer" target="_blank" href="https://arxiv.org/abs/2607.15341">Forest without trees is still fruitful (arXiv:2607.15341)</a></p>
+</div>
+  </div>
+</section>
+<section id="ugmrt" class="research-entry research-entry--reverse">
+  <figure class="research-figure">
+    <img src="Upper_lim.jpg" alt="Two-panel scientific figure showing uGMRT power-spectrum sensitivity and an upper limit on the 21 cm brightness-temperature power spectrum" loading="lazy" decoding="async">
+    <figcaption>The uGMRT analysis placed the first multi-redshift interferometric limits on the post-reionization 21 cm signal at z = 1.96-3.58.</figcaption>
+  </figure>
+  <div class="research-copy">
+    <p class="card-meta">uGMRT · Foregrounds and post-reionization cosmology</p>
+    <h2>From calibrated visibilities to multi-redshift 21 cm limits</h2>
+    <div><p>During my PhD, I developed a complete wideband calibration, RFI-flagging, imaging, and power-spectrum pipeline for the upgraded Giant Metrewave Radio Telescope. I used deep observations of the ELAIS-N1 field to characterize diffuse Galactic synchrotron emission and extragalactic foreground populations.</p>
+<p>That work produced the first multi-redshift interferometric upper limits on the post-reionization 21 cm power spectrum at <strong>z = 1.96-3.58</strong>, constraining the product of neutral-hydrogen abundance and bias. I also quantified how missing frequency channels caused by RFI flagging affect cosmological power-spectrum estimation.</p>
+<p><a rel="noopener noreferrer" target="_blank" href="https://doi.org/10.3847/2041-8213/abd17a">21 cm limits (ApJL)</a> · <a rel="noopener noreferrer" target="_blank" href="https://doi.org/10.3847/1538-4357/ac5cc5">Missing spectral information (ApJ)</a> · <a rel="noopener noreferrer" target="_blank" href="https://github.com/Arnab-half-blood-prince/GMRT_DI_Calibration_pipeline">Calibration pipeline</a></p>
+</div>
+  </div>
+</section>
+<section id="lensing" class="research-entry">
+  <figure class="research-figure">
+    <img src="spectrum_im.jpg" alt="Scientific plot of the detected redshifted HI 21 cm emission spectrum from a strongly lensed galaxy" loading="lazy" decoding="async">
+    <figcaption>The detected HI 21 cm emission line from a strongly lensed star-forming galaxy at z ≈ 1.3.</figcaption>
+  </figure>
+  <div class="research-copy">
+    <p class="card-meta">Galaxy evolution · Strong gravitational lensing</p>
+    <h2>Detecting neutral hydrogen in a distant galaxy</h2>
+    <div><p>The 21 cm emission line is a direct tracer of a galaxy's neutral atomic gas, the reservoir from which new stars form. At high redshift the line is extremely faint, making detections from individual galaxies exceptionally difficult with present-day radio telescopes.</p>
+<p>Strong gravitational lensing solves this. A foreground mass concentration magnifies the weak emission from a background source, boosting the signal by factors of ten to a hundred and bringing galaxies at <em>z</em> &gt; 1 within reach of existing telescopes. Using the uGMRT, we reported the first 5σ detection of HI 21 cm emission from a star-forming galaxy at <strong>z ≈ 1.3</strong>, magnified by an early-type elliptical lens at <em>z</em> ≈ 0.13.</p>
+<p>The measured atomic-to-stellar mass ratio, <em>M</em><sub>HI</sub>/<em>M</em><sub>∗</sub> ∼ 2.4, is far above the value seen in local star-forming galaxies (∼0.35), direct evidence that gas reservoirs have been depleted since cosmic noon. The detection needed only a modest amount of telescope time, which means the approach scales: galaxy clusters, with their much larger Einstein radii, are the natural next targets, and SKA-Mid should eventually reach more than 10⁴ lensed HI galaxies.</p>
+<p><a rel="noopener noreferrer" target="_blank" href="https://doi.org/10.1093/mnras/stac3696">Read the paper (MNRAS)</a> · <a rel="noopener noreferrer" target="_blank" href="https://arxiv.org/abs/2301.05987">arXiv:2301.05987</a></p>
+</div>
+  </div>
+</section>
+<p>The complete and most current publication list is available through <a rel="noopener noreferrer" target="_blank" href="https://ui.adsabs.harvard.edu/search/q=docs(library%2F0M0G3dsjSNeXotLDUmsR6Q)&amp;sort=date%20desc%2C%20bibcode%20desc&amp;p_=0">NASA ADS</a>.</p>
+
+    </div>
+  </article>
+
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="shell footer-grid">
+        <div>
+          <p class="footer-name">Arnab Chakraborty</p>
+          <p>Dunlap Fellow · Dunlap Institute for Astronomy and Astrophysics, University of Toronto</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://arnab-half-blood-prince.github.io/scripts/site.js?h=c0007c4f5c952311a580" defer></script>
+  </body>
+</html>

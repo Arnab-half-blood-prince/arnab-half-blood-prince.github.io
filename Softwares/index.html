@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <meta name="description" content="Open-source tools and analysis pipelines for transit radio telescopes, calibration, foreground mitigation, and 21 cm cosmology.">
+    <meta name="author" content="Arnab Chakraborty">
+    <meta name="keywords" content="radio astronomy, cosmology, 21 cm intensity mapping, CHIME, CHORD, uGMRT">
+    <title>Software · Arnab Chakraborty</title>
+    <link rel="icon" type="image/png" href="https://arnab-half-blood-prince.github.io/favicon.png">
+    <link rel="stylesheet" href="https://arnab-half-blood-prince.github.io/styles/site.css?h=305f1d1e1d4a801d3674">
+    <script>
+      (function () {
+        const saved = localStorage.getItem("theme");
+        const preferred = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        document.documentElement.dataset.theme = saved || preferred;
+      })();
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="https:&#x2F;&#x2F;arnab-half-blood-prince.github.io" aria-label="Arnab Chakraborty, home">
+          <strong>Arnab</strong> Chakraborty
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">
+          <span class="sr-only">Open navigation</span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+
+        <nav class="site-nav" id="site-navigation" aria-label="Primary navigation">
+          
+          
+            <a href="&#x2F;Research&#x2F;">Research</a>
+          
+            <a href="&#x2F;Publications&#x2F;">Publications</a>
+          
+            <a href="&#x2F;Softwares&#x2F;" aria-current="page">Software</a>
+          
+            <a href="&#x2F;Resources&#x2F;">Resources</a>
+          
+            <a href="&#x2F;Talks&#x2F;">Talks</a>
+          
+            <a href="&#x2F;CV&#x2F;">CV</a>
+          
+          <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch color theme">
+            <svg class="theme-icon theme-icon--sun" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="4"></circle>
+              <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.65 17.65l1.42 1.42M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.65 6.35l1.42-1.42"></path>
+            </svg>
+            <svg class="theme-icon theme-icon--moon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"></path>
+            </svg>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      
+  <article class="shell page">
+    <header class="page-header">
+      <p class="eyebrow">Code and pipelines</p>
+      <h1>Software</h1>
+      <p class="page-lede">Open-source tools and analysis pipelines for transit radio telescopes, calibration, foreground mitigation, and 21 cm cosmology.</p>
+    </header>
+    <div class="page-content prose">
+      <p>My research is built around reproducible, end-to-end analysis. I contribute to collaboration software and maintain tools developed for my own observing programs.</p>
+<div class="card-grid">
+  <article class="info-card">
+    <p class="card-meta">Python · radiocosmology</p>
+    <h2><a href="https://github.com/radiocosmology/draco">draco</a></h2>
+    <p>Pipeline building blocks for the analysis and simulation of data from transit radio interferometers. I contribute analysis components used in CHIME and related 21 cm workflows.</p>
+  </article>
+  <article class="info-card">
+    <p class="card-meta">Python · CHIME</p>
+    <h2><a href="https://github.com/chime-experiment/ch_pipeline">ch_pipeline</a></h2>
+    <p>The CHIME analysis pipeline, including data-processing infrastructure for calibration, beamforming, foreground filtering, and validation.</p>
+  </article>
+  <article class="info-card">
+    <p class="card-meta">Python · telescope modelling</p>
+    <h2><a href="https://github.com/radiocosmology/driftscan">driftscan</a></h2>
+    <p>Models transfer functions for drift-scan telescopes and generates products used to filter foregrounds and estimate 21 cm power spectra.</p>
+  </article>
+  <article class="info-card">
+    <p class="card-meta">Python · sky simulation</p>
+    <h2><a href="https://github.com/radiocosmology/cora">cora</a></h2>
+    <p>Simulates low-frequency radio skies, including polarized Galactic synchrotron emission, point sources, and cosmological 21 cm signals.</p>
+  </article>
+  <article class="info-card">
+    <p class="card-meta">CASA · uGMRT</p>
+    <h2><a href="https://github.com/Arnab-half-blood-prince/GMRT_DI_Calibration_pipeline">GMRT DI Calibration Pipeline</a></h2>
+    <p>My public direction-independent calibration and RFI-flagging pipeline for uGMRT Band 3, Band 4, and Band 5 data.</p>
+  </article>
+  <article class="info-card">
+    <p class="card-meta">Validation · CHIME</p>
+    <h2><a href="https://github.com/chime-experiment/Daily_validation">Daily validation</a></h2>
+    <p>Notebooks and diagnostics used to monitor analysis products and test the stability of CHIME data-processing outputs.</p>
+  </article>
+</div>
+<p>More repositories and contributions are available on <a rel="noopener noreferrer" target="_blank" href="https://github.com/Arnab-half-blood-prince">GitHub</a>.</p>
+
+    </div>
+  </article>
+
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="shell footer-grid">
+        <div>
+          <p class="footer-name">Arnab Chakraborty</p>
+          <p>Dunlap Fellow · Dunlap Institute for Astronomy and Astrophysics, University of Toronto</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://arnab-half-blood-prince.github.io/scripts/site.js?h=c0007c4f5c952311a580" defer></script>
+  </body>
+</html>
