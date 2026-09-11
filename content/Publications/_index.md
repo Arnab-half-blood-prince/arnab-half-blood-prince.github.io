@@ -1,6 +1,6 @@
 +++
 title = "Publications"
-description = "Lead-author work and papers led by students I have supervised. NASA ADS holds the complete and continuously updated list."
+description = "Selected publications where I led/co-led the work and papers led by students I have supervised. NASA ADS holds the complete and continuously updated list."
 template = "simple-section.html"
 
 [extra]
