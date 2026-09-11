@@ -1,6 +1,6 @@
 +++
 title = "Publications"
-description = "Lead-author work, papers led by students I have supervised, and selected collaboration publications. NASA ADS holds the complete and continuously updated list."
+description = "Lead-author work and papers led by students I have supervised. NASA ADS holds the complete and continuously updated list."
 template = "simple-section.html"
 
 [extra]
@@ -9,15 +9,9 @@ eyebrow = "Selected papers"
 
 <p><a class="button button--primary" href="https://ui.adsabs.harvard.edu/search/q=docs(library%2F0M0G3dsjSNeXotLDUmsR6Q)&amp;sort=date%20desc%2C%20bibcode%20desc&amp;p_=0" target="_blank" rel="noopener noreferrer">View complete list on NASA ADS</a></p>
 
-<nav class="section-jump" aria-label="On this page">
-  <a href="#lead">Lead author</a>
-  <a href="#reviews">Co-led reviews</a>
-  <a href="#students">Student-led</a>
-  <a href="#collaboration">Collaboration</a>
-</nav>
+<p class="group-note"><span class="publication-star">★</span> marks a paper led by a student I supervised.</p>
 
 <section class="publication-group" id="lead">
-  <h2>Lead and co-lead author</h2>
   <ol class="publication-list">
     <li>
       <span class="publication-year">2026</span>
@@ -47,6 +41,15 @@ eyebrow = "Selected papers"
       </div>
     </li>
     <li>
+      <span class="publication-year">2025</span>
+      <div>
+        <span class="publication-title"><span class="publication-star" aria-label="Student-led">★</span>ELAIS-N1 deep field uGMRT Band-2: constraints on the diffuse Galactic synchrotron emission power spectrum</span>
+        <span class="publication-authors">R. Sagar, A. Datta, <strong>A. Chakraborty</strong>, N. Roy, A. Sinha, A. Mazumder, et al.</span>
+        <span class="publication-venue">Monthly Notices of the Royal Astronomical Society, 544, 3617</span>
+        <span class="publication-links"><a href="https://doi.org/10.1093/mnras/staf1922">DOI</a></span>
+      </div>
+    </li>
+    <li>
       <span class="publication-year">2023</span>
       <div>
         <span class="publication-title">Detection of HI 21 cm emission from a strongly lensed galaxy at z ∼ 1.3</span>
@@ -62,6 +65,33 @@ eyebrow = "Selected papers"
         <span class="publication-authors"><strong>A. Chakraborty</strong>, A. Datta, and A. Mazumder</span>
         <span class="publication-venue">The Astrophysical Journal, 929, 104</span>
         <span class="publication-links"><a href="https://doi.org/10.3847/1538-4357/ac5cc5">DOI</a><a href="https://arxiv.org/abs/2203.04994">arXiv</a></span>
+      </div>
+    </li>
+    <li>
+      <span class="publication-year">2022</span>
+      <div>
+        <span class="publication-title"><span class="publication-star" aria-label="Student-led">★</span>A study on the clustering properties of radio-selected sources in the Lockman Hole region at 325 MHz</span>
+        <span class="publication-authors">A. Mazumder, <strong>A. Chakraborty</strong>, and A. Datta</span>
+        <span class="publication-venue">Monthly Notices of the Royal Astronomical Society, 517, 3407</span>
+        <span class="publication-links"><a href="https://doi.org/10.1093/mnras/stac2801">DOI</a></span>
+      </div>
+    </li>
+    <li>
+      <span class="publication-year">2022</span>
+      <div>
+        <span class="publication-title"><span class="publication-star" aria-label="Student-led">★</span>Observing the reionization: effect of calibration and position errors on realistic observation conditions</span>
+        <span class="publication-authors">A. Mazumder, A. Datta, <strong>A. Chakraborty</strong>, and S. Majumdar</span>
+        <span class="publication-venue">Monthly Notices of the Royal Astronomical Society, 515, 4020</span>
+        <span class="publication-links"><a href="https://doi.org/10.1093/mnras/stac1994">DOI</a></span>
+      </div>
+    </li>
+    <li>
+      <span class="publication-year">2022</span>
+      <div>
+        <span class="publication-title"><span class="publication-star" aria-label="Student-led">★</span>Deep uGMRT observations of the ELAIS-North 1 field: statistical properties of radio–infrared relations up to z ∼ 2</span>
+        <span class="publication-authors">A. Sinha, A. Basu, A. Datta, and <strong>A. Chakraborty</strong></span>
+        <span class="publication-venue">Monthly Notices of the Royal Astronomical Society, 514, 4343</span>
+        <span class="publication-links"><a href="https://doi.org/10.1093/mnras/stac1504">DOI</a></span>
       </div>
     </li>
     <li>
@@ -92,6 +122,15 @@ eyebrow = "Selected papers"
       </div>
     </li>
     <li>
+      <span class="publication-year">2020</span>
+      <div>
+        <span class="publication-title"><span class="publication-star" aria-label="Student-led">★</span>Characterizing EoR foregrounds: a study of the Lockman Hole region at 325 MHz</span>
+        <span class="publication-authors">A. Mazumder, <strong>A. Chakraborty</strong>, A. Datta, S. Choudhuri, N. Roy, et al.</span>
+        <span class="publication-venue">Monthly Notices of the Royal Astronomical Society, 495, 4071</span>
+        <span class="publication-links"><a href="https://doi.org/10.1093/mnras/staa1317">DOI</a></span>
+      </div>
+    </li>
+    <li>
       <span class="publication-year">2019</span>
       <div>
         <span class="publication-title">Detailed study of ELAIS N1 field with the uGMRT – II. Source properties and spectral variation of foreground power spectrum from 300–500 MHz observations</span>
@@ -107,53 +146,8 @@ eyebrow = "Selected papers"
         <span class="publication-authors"><strong>A. Chakraborty</strong>, A. Datta, S. Choudhuri, N. Roy, H. Intema, et al.</span>
         <span class="publication-venue">Monthly Notices of the Royal Astronomical Society, 487, 4102</span>
         <span class="publication-links"><a href="https://doi.org/10.1093/mnras/stz1580">DOI</a><a href="https://arxiv.org/abs/1906.01655">arXiv</a></span>
-      </div>    <li>
-      <span class="publication-year">2025</span>
-      <div>
-        <span class="publication-title">ELAIS-N1 deep field uGMRT Band-2: constraints on the diffuse Galactic synchrotron emission power spectrum</span>
-        <span class="publication-authors">R. Sagar, A. Datta, <strong>A. Chakraborty</strong>, N. Roy, A. Sinha, A. Mazumder, et al.</span>
-        <span class="publication-venue">Monthly Notices of the Royal Astronomical Society, 544, 3617</span>
-        <span class="publication-links"><a href="https://doi.org/10.1093/mnras/staf1922">DOI</a></span>
       </div>
     </li>
-    <li>
-      <span class="publication-year">2022</span>
-      <div>
-        <span class="publication-title">A study on the clustering properties of radio-selected sources in the Lockman Hole region at 325 MHz</span>
-        <span class="publication-authors">A. Mazumder, <strong>A. Chakraborty</strong>, and A. Datta</span>
-        <span class="publication-venue">Monthly Notices of the Royal Astronomical Society, 517, 3407</span>
-        <span class="publication-links"><a href="https://doi.org/10.1093/mnras/stac2801">DOI</a></span>
-      </div>
-    </li>
-    <li>
-      <span class="publication-year">2022</span>
-      <div>
-        <span class="publication-title">Observing the reionization: effect of calibration and position errors on realistic observation conditions</span>
-        <span class="publication-authors">A. Mazumder, A. Datta, <strong>A. Chakraborty</strong>, and S. Majumdar</span>
-        <span class="publication-venue">Monthly Notices of the Royal Astronomical Society, 515, 4020</span>
-        <span class="publication-links"><a href="https://doi.org/10.1093/mnras/stac1994">DOI</a></span>
-      </div>
-    </li>
-    <li>
-      <span class="publication-year">2022</span>
-      <div>
-        <span class="publication-title">Deep uGMRT observations of the ELAIS-North 1 field: statistical properties of radio–infrared relations up to z ∼ 2</span>
-        <span class="publication-authors">A. Sinha, A. Basu, A. Datta, and <strong>A. Chakraborty</strong></span>
-        <span class="publication-venue">Monthly Notices of the Royal Astronomical Society, 514, 4343</span>
-        <span class="publication-links"><a href="https://doi.org/10.1093/mnras/stac1504">DOI</a></span>
-      </div>
-    </li>
-    <li>
-      <span class="publication-year">2020</span>
-      <div>
-        <span class="publication-title">Characterizing EoR foregrounds: a study of the Lockman Hole region at 325 MHz</span>
-        <span class="publication-authors">A. Mazumder, <strong>A. Chakraborty</strong>, A. Datta, S. Choudhuri, N. Roy, et al.</span>
-        <span class="publication-venue">Monthly Notices of the Royal Astronomical Society, 495, 4071</span>
-        <span class="publication-links"><a href="https://doi.org/10.1093/mnras/staa1317">DOI</a></span>
-      </div>
-    </li>
-    </li>
-    
   </ol>
 </section>
 
